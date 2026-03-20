@@ -45,11 +45,11 @@ Based on these checks, it classifies the URL as:
 
 ### ✅ Safe URL Detection
 
-![Safe Output](screenshots/safe.png)
+![Safe Output](screenshots/Safe.png)
 
 ### ⚠️ Unsafe URL Detection
 
-![Unsafe Output](screenshots/unsafe.png)
+![Unsafe Output](screenshots/Unsafe.png)
 
 ---
 
