@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SafeSurf</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: linear-gradient(135deg, #141e30, #243b55);
+            color: white;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .box {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 12px;
+            width: 400px;
+            margin: auto;
+        }
+
+        input {
+            width: 90%;
+            padding: 12px;
+            border-radius: 8px;
+            border: none;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            background: #00ffcc;
+            cursor: pointer;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+    <h1>🌐 SafeSurf - URL Safety Checker</h1>
+    <p>Check if a URL is safe or phishing</p>
+
+    <form method="POST">
+        <input type="text" name="url" placeholder="Enter URL..." required>
+        <br>
+        <button type="submit">Check</button>
+    </form>
+
+    {% if result %}
+        <div class="result">
+            {{ result }}
+        </div>
+    {% endif %}
+</div>
+
+</body>
+</html>
